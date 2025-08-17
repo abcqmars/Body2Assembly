@@ -50,16 +50,22 @@ pip install numpy==1.23.5
 (Note: conversion to .pkl or .txt format is required; see the provided test cases for reference)
 
 ### Running the Code
-Activate the enviroment and run the code. Configuration files is in `configs`. 
+
+
+1. Running with CLI. Activate the enviroment and run the code. Configuration files is in `configs`. The results are saved in `data/results` and can be viewed with any graphics viewer.
+
 ```
 conda activate b2a
 python main.py
 ```
-The results are saved in `data/results` and can be viewed with any graphics viewer.
 <p align="center">
  <img width=811 height=430 src="doc/exp.png" alt="Example">
 </p>
 
+2. Alternatively, you can run the code over gui, to inspect the intermediate results of optimization.
+<p align="center">
+ <img width=790 height=560 src="doc/gui.png" alt="Example">
+</p>
 
 ## Authors
 - [Yixuan He](https://github.com/abcqmars) 
