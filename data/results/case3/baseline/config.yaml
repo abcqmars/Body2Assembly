@@ -1,0 +1,30 @@
+bodyModelParams:
+  segmentStrategy: segment_butt_updown
+expName: baseline
+globalParams:
+  divergence: 0.1
+  overfit: 0
+  overlap: 0.001
+  partDist: 0.001
+  smoothness: 0.001
+localParams:
+  bodyPlaneDist: 0
+  overfit: 0.005
+  penetration: 0.001
+  pressure: 0.1
+  shear: 0.1
+pipeline:
+- params:
+    penetration: 0.01
+  stage: local
+  strategy: PositionOnly
+- params:
+    penetration: 0.001
+  stage: local
+  strategy: ShapeOnly
+- params:
+    divergence: 0.1
+    overlap: 0.001
+    partDist: 0.001
+  stage: global
+  strategy: PositionOnly
